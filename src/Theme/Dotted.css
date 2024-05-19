@@ -1,0 +1,6 @@
+.DottedBox {
+    border: 2px dotted #bbb;
+    padding: 20px;
+    text-align: center;
+  }
+  

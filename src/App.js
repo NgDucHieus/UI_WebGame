@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react';
+import './App.css'; // Imports the CSS file for styling
+import Header from './Components/Header/Header'; // Imports the Header component
+import FrameImages from './Components/ImagesHost/FrameImages'; // Imports the FrameImages component
+import './Theme/Topnav.css'; // Imports additional CSS file
+import Section from './Components/Section/Section';
+import Navbar from './Components/Navbar/Navbar';
+import FlipCard from './Components/FlipCard/FlipCard';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='container'>
+
+        <Navbar></Navbar>
+        <FlipCard/>
+        {/* <FrameImages /> */}
+        {/* <FrameImages /> Renders the FrameImages component */}
+        {/* <UploadAndDisplayImage /> This seems to be commented out */}
+      </div>
     </div>
   );
 }

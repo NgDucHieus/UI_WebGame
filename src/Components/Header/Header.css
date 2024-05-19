@@ -1,0 +1,18 @@
+.flex {
+    display: flex;
+  }
+  
+  .gap-2 {
+    gap: 0.5rem; /* Adjust as necessary */
+  }
+  
+  .h-14 {
+    height: 3.625rem; /* Adjust as necessary */
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* ... and so on */
+  

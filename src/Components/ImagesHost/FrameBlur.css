@@ -1,0 +1,23 @@
+.Blur {
+    object-fit: cover;
+    width: 230px;
+    height: 300px;
+    border-radius: 16px;
+    text-align: center;
+    margin: 0 10px;
+    max-width: 100%; /* Ensure the image does not overflow the container */
+    /* max-height:100%; Adjust as needed for your design */
+    inline-size: 230px;  
+
+    filter: blur(1.7px);
+    /* -webkit-filter: blur(8px); */
+  }
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fbfbfb;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+  }

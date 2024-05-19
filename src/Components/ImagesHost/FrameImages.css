@@ -1,0 +1,33 @@
+.Frame {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  
+  width: 100%; /* Adjust as needed */
+  height: auto; /* Adjust as needed */
+  /* margin-left: 15vw;
+  margin-top: 5vw; */
+  /* margin: auto; */
+  
+  
+  
+}
+
+.Img {
+  border:3.5px solid #deeaf0;
+  
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  
+  margin: 0 10px;
+  max-width: 100%; /* Ensure the image does not overflow the container */
+  /* max-height:100%; Adjust as needed for your design */
+  inline-size: 230px;  
+}
+
+.Text {
+  font-size: 16px; /* Adjust text size as needed */
+  color: #000; /* Adjust text color as needed */
+}
