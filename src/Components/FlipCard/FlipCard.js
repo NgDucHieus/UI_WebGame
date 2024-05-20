@@ -14,11 +14,13 @@ const FlipCard = ({ frontContent, backContent,src }) => {
     <div className={`flip-card ${isFlipped ? 'flipped' : ''}`} onClick={handleCardClick}>
       <div className="flip-card-inner">
         <div className="flip-card-front">
-          <FrameImages src={src}/>
+          <img src={src} alt="Test" className="Img" />
         </div>
         <div className="flip-card-back">
           
-          <div className='blur_background'> <FrameImages src={src}/> </div>
+          <div className='blur_background'> 
+            <img src={src} alt="Test" className="Img" />
+          </div>
           <div className="overlay"></div>
 
           <div class="centered" >Centered</div>
