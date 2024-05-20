@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './FlipCard.css'; // Import CSS file for styling
 import FrameImages from '../ImagesHost/FrameImages';
+import test from '../ImagesHost/test.jpg';
 
-const FlipCard = ({ frontContent, backContent }) => {
+const FlipCard = ({ frontContent, backContent,src }) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleCardClick = () => {
@@ -13,11 +14,11 @@ const FlipCard = ({ frontContent, backContent }) => {
     <div className={`flip-card ${isFlipped ? 'flipped' : ''}`} onClick={handleCardClick}>
       <div className="flip-card-inner">
         <div className="flip-card-front">
-          <FrameImages/>
+          <FrameImages src={src}/>
         </div>
         <div className="flip-card-back">
           
-          <div className='blur_background'> <FrameImages/> </div>
+          <div className='blur_background'> <FrameImages src={src}/> </div>
           <div className="overlay"></div>
 
           <div class="centered" >Centered</div>

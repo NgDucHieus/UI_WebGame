@@ -2,11 +2,11 @@ import React from 'react';
 import test from './test.jpg';
 import './FrameImages.css';
 
-function FrameImages() {
+function FrameImages({src}) {
   return (
     
     <div className="Frame">
-      <img src={test} alt="Test" className="Img" />
+      <img src={src} alt="Test" className="Img" />
       {/* <span className="Text">Hello World</span> */}
     </div>
   );
